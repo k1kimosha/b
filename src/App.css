@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.App {
+    /* transform: ; */
+    animation: pepe 4s infinite linear;
+}
+
+@keyframes pepe {
+    0% {
+        transform: perspective(38rem) rotateX(20deg) rotateY(0deg);
+        color: teal;
+        text-shadow: 0 0 50px teal;
+    }
+
+    25% {
+        color: rgb(195, 0, 255);
+        text-shadow: 0 0 50px rgb(195, 0, 255);
+    }
+
+    50% {
+        transform: perspective(38rem) rotateX(20deg) rotateY(180deg);
+        color: rgb(4, 0, 255);
+        text-shadow: 0 0 50px rgb(4, 0, 255);
+    }
+
+    75% {
+        color: rgb(255, 81, 0);
+        text-shadow: 0 0 50px rgb(255, 81, 0);
+    }
+
+    100% {
+        transform: perspective(38rem) rotateX(20deg) rotateY(360deg);
+        color: teal;
+        text-shadow: 0 0 50px teal;
+    }
+}
